@@ -6,6 +6,7 @@ import Features from '../components/Features'
 import About from '../components/About'
 import Services from '../components/Services'
 import WhyUs from '../components/WhyUs'
+import ProjectCase from '../components/ProjectCase'
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
           <About />
           <Services />
           <WhyUs />
+          <ProjectCase />
         </main>
         <footer>
           Foot

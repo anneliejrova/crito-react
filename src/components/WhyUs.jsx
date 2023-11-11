@@ -16,19 +16,17 @@ const WhyUs = () => {
             <div className="why-txt">
                 <SectionTitle title="Why Choose Us" txt="Why We Are The Best Business Consulting Agency" />
                 
-                        <div className="reasons">
-
-                            <Reason img={ThumbsUpIcon} imgtxt="Thumbs up icon" title="Process Excellence" txt="Lorem, ipsum dolor sit amet consectetur." />
-                            <Reason img={StratergyIcon} imgtxt="Stratergy icon" title="Strategic Planning" txt="Lorem, ipsum dolor sit amet consectetur." />
-                            <Reason img= {DesignIcon} imgtxt="Design icon" title="Experience Design" txt="Lorem, ipsum dolor sit amet consectetur." />
-                            <Reason img={AiIcon} imgtxt="AI icon" title="Artificial Inteligenc" txt="Lorem, ipsum dolor sit amet consectetur." />
-
-                        </div>
-                    </div>
-                    <div className="why-img">
-                        <img src={WomenPhoto} alt="Picture of two women working on a laptop" />
-                    </div>
+                <div className="reasons">
+                    <Reason img={ThumbsUpIcon} imgtxt="Thumbs up icon" title="Process Excellence" txt="Lorem, ipsum dolor sit amet consectetur." />
+                    <Reason img={StratergyIcon} imgtxt="Stratergy icon" title="Strategic Planning" txt="Lorem, ipsum dolor sit amet consectetur." />
+                    <Reason img= {DesignIcon} imgtxt="Design icon" title="Experience Design" txt="Lorem, ipsum dolor sit amet consectetur." />
+                    <Reason img={AiIcon} imgtxt="AI icon" title="Artificial Inteligenc" txt="Lorem, ipsum dolor sit amet consectetur." />
                 </div>
+            </div>
+            <div className="why-img">
+                <img src={WomenPhoto} alt="Picture of two women working on a laptop" />
+            </div>
+        </div>
     </div>
   )
 }
