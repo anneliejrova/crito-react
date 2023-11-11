@@ -7,6 +7,12 @@
 @import './assets/scss/buttons.scss';
 @import './assets/scss/showcaseStyle.scss';
 @import './assets/scss/partnersStyle.scss';
+@import './assets/scss/featuresStyle.scss';
+@import './assets/scss/sectionTitle.scss';
+@import './assets/scss/aboutStyle.scss';
+@import './assets/scss/servicesStyle.scss';
+@import './assets/scss/whyUsStyle.scss';
+
 
 .wrapper-grid{
     height: 100vh;
@@ -39,33 +45,15 @@ a{
 }
 
 .center-content{
-    margin-top: 50px;
-    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.section-title{
-    padding-top: 70px;
-    padding-bottom: 30px;
-
-    @media (min-width: 768px){
-        padding-top: 120px;
-        padding-bottom: 90px;
-    }
-   
-    p{
-        color: $txt-accent;
-        margin-bottom: 10px;
-    }
-    h2{
-        color: $dark;
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-        font-size: 38px;
-
-        @media (min-width: 1200px){
-            font-size: 2.5rem;
-        }
-    }
+h3{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 

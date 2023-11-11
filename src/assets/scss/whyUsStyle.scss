@@ -1,0 +1,114 @@
+.why-us{
+    width: 100%;
+    margin: 50px 0px;
+    position: relative;
+    z-index: 0;
+    background-color: $light;
+
+    @media (min-width: 992px){
+        padding-bottom: 0px;
+    }
+
+    .grey{
+        width: 100%;
+        height: 10%;
+        background-color:$bg-color;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+
+        @media (min-width: 576px){
+            height: 20%;
+        }
+
+        @media (min-width: 992px){
+            width: 55%;
+            height: 40%;
+            bottom: 150px;
+        }
+
+
+        @media (min-width: 1200px) {
+            width: 60%;
+            height: 40%;
+            bottom: 150px;
+        }
+       
+
+        @media (min-width: 1400px) {          
+            height: 50%;
+            bottom: 20px;
+        }
+    }
+
+    .container{
+        display: grid;
+        padding-top: 150px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        
+        
+
+        @media (min-width: 768px){
+        grid-template-rows: 1fr 1fr;
+        }
+
+        @media (min-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+        }
+
+        @media (min-width:1200px) {
+        grid-template-columns: 2fr 3fr;
+        }
+
+        @media (min-width: 1400px) {
+            grid-template-columns: 1fr 2fr;
+        }
+        
+
+        .why-txt{
+            padding-bottom: 50px;
+            
+
+             @media (min-width: 992px){
+            padding-bottom: 0px;
+            }
+
+            .section-title{
+                padding-top: 20px;
+                padding-bottom: 5px;
+                @media (min-width:576px) {
+                    padding-top: 0px;
+                }
+            }
+            .reasons{
+                .reason{
+                    padding-top: 5px;
+                }
+            }
+
+        }
+
+        .why-img{
+
+            @media (min-width:1200px) {
+            z-index: 0;
+            position: relative;
+            }
+
+            img{
+                width:100%;
+                
+                @media (min-width:1200px) {
+                position: absolute;
+                z-index: -1;
+                right: 0px;
+                width: auto;
+                }
+            }                 
+        }
+    }
+}

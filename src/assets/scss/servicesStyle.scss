@@ -1,0 +1,99 @@
+.services{
+    background-color:$bg-color;
+    position: relative;
+    z-index: 0;
+
+    .lines{
+        width: 100vw;
+        
+        .bg-lines{
+            width: 50%;
+            height: auto;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        
+
+            @media (min-width: 1200px){
+                width: 30%;
+            }
+        }
+    }
+
+    .container{
+
+        
+        .cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+
+            @media (min-width:768px) {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+
+
+            .service-card{
+                background-color: $light;
+                padding: 30px 30px 0px 30px;
+                width: 300px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                transition: background-color 0.25s ease-in-out;
+                
+                
+
+                &:hover{
+                    background-color: $theme-color;
+                }
+
+
+                i{
+                    font-size: 2.5rem;
+                    padding: 10px 0;
+                }
+
+                .service-txt{
+                    padding-bottom: 50px;
+                    padding-top: 20px;
+                    font-family: 'Inter', sans-serif;
+                }
+
+                .btn-round{
+                    display: block;
+                    background-color: $dark;
+                    color:$bg-color;
+                    border-radius: 25px;
+                    align-self: self-end;
+                    margin-bottom: 20px;
+                    transition: background-color 0.1s ease-in-out,
+                                color 0.1s ease-in-out;
+                    
+
+                    i{
+                      font-size: 1.1rem; 
+                      padding: 15px 16px; 
+                    }
+                }
+
+                &:hover .btn-round{
+                    background-color:$bg-color;
+                    color: $dark  ;
+                }
+            }
+        }
+                
+        .btn-transparent{
+            display: block;
+            width: 275px;
+            text-align: center;
+            margin-top: 50px;
+        }     
+    }  
+}

@@ -1,0 +1,143 @@
+.features{
+    
+    background-color: $light;
+    padding-bottom: 20px;
+
+    @media (min-width:576px) {
+        padding-bottom: 20px}
+
+        @media (min-width:992px) {
+            padding-bottom: 25px}
+    
+
+    @media (min-width:1200px) {
+        padding-bottom: 150px;
+    }
+    
+    .container{
+        border: 1px solid #DAD9D3;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 100px;
+        gap: 45px;    
+        padding: 50px;
+        display: grid;
+        
+        grid-template-areas: 
+            "headline"
+            "business"
+            "startup"
+            "finance"
+            "risk"
+            "btn";
+
+        @media (min-width: 768px){
+            grid-template-areas: 
+                "headline headline"
+                "business startup"
+                "finance risk"
+                "btn btn";
+        }
+
+        @media (min-width: 768px){
+            padding: 100px;
+        }
+        
+        @media (min-width: 1200px){
+            margin-bottom: 0px;
+            padding: 50px;
+            grid-template-areas:   
+                "headline headline business startup"
+                "btn btn finance risk ";
+        }
+    
+
+        @media (min-width: 1400px){
+            margin-top: 70px;
+            padding: 100px;
+            column-gap: 80px;
+        }
+
+        .section-title{
+            grid-area: headline; 
+            padding: 0px;  
+            margin: 0px;    
+
+            .section-title{
+            padding: 0px;     
+            }
+
+            @media (min-width: 1200px){
+                align-self: flex-start;
+            }
+        }
+
+        .topic{
+            color: $dark;
+            transition: color 0.2s ease-in-out;
+             @media (min-width: 1200px){
+            width: 250px;
+            }
+            &:hover{
+                color: $accent;
+                cursor: pointer;
+            }
+        }
+
+        .business{
+            grid-area: business;
+
+            @media (min-width: 1200px){
+                margin-top: 30px;
+            }
+
+        }
+
+        .startup{
+            grid-area: startup;
+            @media (min-width: 1200px){
+                margin-top: 30px;
+            }
+        
+        }
+
+        .finance{
+            grid-area: finance;
+            @media (min-width: 1200px){
+                margin-top: -20px;
+            }
+           
+        }
+
+        .risk{
+            grid-area: risk;
+            @media (min-width: 1200px){
+                margin-top: -20px;
+            }
+         
+        }
+
+        .learn{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            grid-area: btn;
+            
+            .btn-yellow{
+                width: 75%;
+                margin-top: 50px;
+                 
+                @media (min-width: 768px){
+                    margin-top: 0;
+                }
+            }
+
+            @media (min-width: 1200px){
+                justify-content: flex-start;
+            }
+        }
+    }
+}
