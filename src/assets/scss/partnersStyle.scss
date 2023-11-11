@@ -1,0 +1,43 @@
+.partners{ 
+    .container{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 10px;
+        padding-top: 35px;
+        padding-bottom: 0px;
+
+
+        img{
+        width: 65%;
+        height: auto;
+        }
+        
+           
+        @media (min-width: 576px) {
+            padding-top: 35px;
+            padding-bottom: 20px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            img{
+                width: 70%;
+                height: auto;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            padding-top: 80px;
+            padding-bottom: 20px;
+            display: flex; 
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    } 
+}

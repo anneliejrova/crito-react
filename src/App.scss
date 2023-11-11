@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,900&display=swap');
+
+@import './assets/scss/colors.scss';
+@import './assets/scss/headerStyle.scss';
+@import './assets/scss/contactsStyle.scss';
+@import './assets/scss/buttons.scss';
+@import './assets/scss/showcaseStyle.scss';
+@import './assets/scss/partnersStyle.scss';
+
+.wrapper-grid{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+html, body{
+
+    color: $dark;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2.0;
+    background-color: $bg-color;
+   
+    
+
+    @media (min-width: 576px) {
+        font-size: 16px;
+        font-weight: 400; 
+            
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $dark;
+}
+
+.center-content{
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+.section-title{
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+    @media (min-width: 768px){
+        padding-top: 120px;
+        padding-bottom: 90px;
+    }
+   
+    p{
+        color: $txt-accent;
+        margin-bottom: 10px;
+    }
+    h2{
+        color: $dark;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 38px;
+
+        @media (min-width: 1200px){
+            font-size: 2.5rem;
+        }
+    }
+}
+
+
+
+

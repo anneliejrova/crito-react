@@ -1,0 +1,148 @@
+header{
+    padding: 14px;
+    
+
+    .container{
+        display:flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+        
+
+        @media (min-width:2500px){
+            max-width: 2048px;
+        }
+
+        
+        .menu-bars-btn{
+            @media (min-width: 992px){
+                display: none;
+            }
+
+            .btn{
+            font-size: 2rem;
+            border: none;
+            background-color: transparent;
+            }
+        }
+       
+
+        .menu{
+            display:none;
+            flex: 1;
+            
+
+            @media (min-width: 992px){
+                display: block;
+            }
+
+            .top-menu{
+                display: flex;
+                justify-content: end;
+                border-bottom: 1px solid #DAD9D3;
+                padding-bottom: 0px;
+                align-items: center;
+
+                @media (min-width: 1200px) {
+                    justify-content: space-between;
+                }
+                
+                .contact-info{
+                    width: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    @media (min-width: 1200px){
+                        
+                    }
+
+                    span{
+                        
+                        display:none;
+                        
+                        @media (min-width: 1200px){
+                            display: inline-block;
+                        }
+                    }
+                    
+
+                    .content-box{
+                        margin-right: 30px;
+                        
+                        border-right: 1px solid #DAD9D3;
+                        font-size: 0.9rem;
+                        font-weight: 300;
+
+                        a{
+                            padding-right: 30px;
+                            &:hover{
+                                padding-right: 22px;
+                                font-weight: 700;
+                            }
+                        }
+
+                        &.last{
+                            border: none;
+                        }
+
+                        i{
+                            margin-right: 5px;
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            
+                .so-media{
+
+                    a{
+                        font-size: 1.2rem;
+                        margin-left: 10px;
+                        border: 1px solid transparent;
+                        padding: 1px;
+                        border-radius: 20%;
+                        transition: background-color 0.10s ease-in-out;
+
+                    
+                        &:hover{
+                            
+                            background-color: $light;
+                        }
+                    }                    
+                }           
+            }
+
+            .main-menu{
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                padding-top: 10px;
+
+                nav{
+                    a{
+                        display: inline-block;
+                        margin-right: 35px;
+                        position: relative;
+
+                        &.active{
+                            font-weight: 500;
+                        }
+
+                        &.active::after,
+                        &:hover::after{
+                            content: '';
+                            position: absolute;
+                            font-weight: 500;
+                            height: 2px;
+                            width: 15px;
+                            background-color: $dark;
+                            left: 50%;
+                            bottom: -3px;
+                            transform: translate((calc(50% - 15px)));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
