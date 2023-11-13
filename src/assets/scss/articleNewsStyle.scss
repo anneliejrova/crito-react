@@ -1,0 +1,107 @@
+.articlenews{
+    background-color: $light;
+
+    .container{
+        display: grid;
+        grid-template-areas:    "title"
+                                "articles"
+                                "button";
+
+        @media (min-width: 992px) {
+            grid-template-areas:    "title title button"
+                                    " articles articles articles";
+            
+        }
+
+    
+        
+        .section-title{
+            grid-area: title;
+            padding: 80px 0 60px 0;
+            
+            
+             @media (min-width:992px) {
+                padding: 100px 0 90px 0;
+             }
+
+             @media (min-width:1200px) {
+             padding: 120px 0 90px 0;
+             }
+        }
+
+        .news-btn{
+            grid-area: button; 
+            padding: 60px 0 80px 0;
+
+            @media (min-width:992px) {
+                padding: 0;
+             }
+    
+        }
+    
+
+
+        .articles{
+            grid-area: articles;
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 20px;
+
+
+            @media (min-width: 768px) {
+                grid-template-columns: 1fr 1fr; 
+                gap: 20px;
+            }
+
+            @media (min-width:992px) {
+                padding-bottom: 100px;
+            }
+    
+            @media (min-width: 1200px) {
+                grid-template-columns: 1fr 1fr 1fr; 
+                gap: 20px;
+            }
+            
+    
+            .article{
+                &:hover .article-txt{
+                    color: $accent;
+                } 
+    
+                .article-img{
+                    position: relative;
+                    z-index: 0;
+                        
+                    .image-container {
+                         width: 100%;
+                        height: 100%;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+    
+                    .date{
+                        background-color: $theme-color;
+                        padding: 10px;
+                        position: absolute;
+                        top: 10%;
+                        left: 3%;
+                        z-index: 1;
+                        margin: 10px;
+
+                        h3{
+                            line-height: 1;
+                        }
+                        p{
+                            line-height: 1;
+                            margin-bottom: 0;
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+}

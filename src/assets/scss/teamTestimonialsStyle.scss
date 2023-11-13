@@ -1,7 +1,6 @@
 .teamtestimonial{
     background-color: $theme-color;
     padding-bottom: 20px;
-    margin-bottom: 20px;
 
     @media (min-width: 576px) {
         padding-bottom: 30px;
@@ -9,11 +8,6 @@
 
     @media (min-width: 992px) {
         padding-bottom: 70px;
-        margin-bottom: 20px;
-    }
-
-    @media (min-width: 1400px) {
-        margin-bottom: 50px;
     }
 
     .container{
@@ -148,8 +142,8 @@
             }
 
             .testimonial-btn{
-             margin-bottom: 50px;
-            }
+                margin-bottom: 50px;
+               }
         }
     }
 }
