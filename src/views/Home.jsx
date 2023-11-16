@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../components/Header'
 import Showcase from '../components/Showcase'
 import Partners from '../components/Partners'
 import Features from '../components/Features'
@@ -14,8 +13,7 @@ import Newsletter from '../components/Newsletter'
 
 const Home = () => {
   return (
-    <div ClassName="wrapper-grid">
-        <Header />
+    
         <main>
           <Showcase />
           <Partners />
@@ -28,10 +26,7 @@ const Home = () => {
           <ArticleNews />
           <Newsletter />
         </main>
-        <footer>
-          Foot
-        </footer>
-    </div>
+       
   )
 }
 

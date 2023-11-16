@@ -1,0 +1,107 @@
+.contact-us{
+    background-color: $light;
+
+    .container{
+        padding: 0px;
+        
+        @media (min-width: 576px) {
+        padding: 100px 50px;
+        }
+
+        @media (min-width: 992px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card{
+            border-radius: 0px;
+            display: flex;
+            flex-direction: row;
+            padding: 5px 10px;
+            gap: 1rem;
+            border: none;
+            
+            
+
+            @media (min-width: 576px) {
+                border: 1px solid $card-border;
+            }
+
+            @media (min-width: 992px) {
+            align-items: flex-start;
+            }
+
+        
+            .span{
+                display: block;
+            }
+
+            @media (min-width: 992px) {
+                flex-direction: column;
+                padding: 25px 50px;
+                width: 28%;
+            }
+
+            @media (min-width:1200px) {
+                flex-direction: row;
+                padding: 3rem;
+            }
+
+            .icon{
+                .round-black{
+                    padding: 0.5rem 1.2rem;;
+                    font-size: 1.3rem;
+
+                    @media (min-width: 576px) {
+                    font-size: 1.3rem;
+                    padding: 0.5rem 1.2rem;
+
+                    color:$light;
+                    background-color: $dark;
+                    border-radius: 50%;
+                    height: auto;
+                    }
+                }
+            }
+
+            .card-txt{
+
+                a{
+                    display: block;
+                    font-size: 0.9rem;
+                }
+
+
+                h3{
+                    font-size: 1.2rem;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    
+                    @media (min-width: 576px) {
+                        font-size: 1.6rem;
+                    }
+                }
+
+                p{
+                    a{  
+                    
+                        &:hover{
+                            color: $accent;
+                        }
+                        
+                        @media (min-width: 576px){
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+                
+
+                
+
+                @media (min-width:1200px) {
+                    padding-top: 0px;
+                }
+            }
+        }
+    }
+}

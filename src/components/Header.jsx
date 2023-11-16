@@ -1,19 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import Logo from '../assets/images/crito_logo.svg'
-import { Link } from 'react-router-dom'
 import Button from './Button'
+import MobileMenu from './MobileMenu'
 
 
 
 
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false)
+
   return (
+    <>
+    { menuOpen ? (<MobileMenu />) : (<></>)}
+    
     <header>
     <div className="container">
-        <Link to='/'> <img className='logo' src={Logo} alt="" /> </Link>
+        <div><Link to='/'> <img className='logo' src={Logo} alt="" /> </Link></div>
         <div className="menu-bars-btn">
-        <i className="fa-solid fa-bars"></i>
+            <button onClick={() => setMenuOpen (!menuOpen)}>
+            {menuOpen ? (<i className="fa-solid fa-xmark"></i>) : (<i className="fa-solid fa-bars"></i>)}
+        
+            </button>
         </div>
+        
 
 
         <div className="menu">
@@ -48,18 +58,17 @@ const Header = () => {
             </div>
             <div className="main-menu">
                 <nav>
-                    <a href="index.html">Home</a>
-                    <a href="service.html">Service</a>
-                    <a href="news.html">News</a>
-                    <a href="contact.html">Contact</a>
+                <div><NavLink to='/'>Home</NavLink></div>
+                <div><NavLink to='/service'>Service</NavLink></div>
+                <div><NavLink to='/news'>News</NavLink></div>
+                <div><NavLink to='/contact'>Contact</NavLink></div>
                 </nav>
                 <Button url="/" txt="Login" className="button btn-theme" />
             </div>
         </div>
     </div>
-
-
 </header>
+</>
   )
 }
 
