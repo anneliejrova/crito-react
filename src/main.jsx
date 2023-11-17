@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-import './App.scss'
+import './App.css'
 import Home from './views/Home'
 import Contact from './views/Contact'
 import News from './views/News'
