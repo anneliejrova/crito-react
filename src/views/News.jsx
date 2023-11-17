@@ -1,8 +1,11 @@
 import React from 'react'
+import PageTitle from '../components/PageTitle'
 
 const News = () => {
   return (
-    <div>News</div>
+        <main>
+        <PageTitle title="News" currentUrl='/news' currentPage='News' />
+        </main>
   )
 }
 

@@ -1,4 +1,5 @@
 header{
+    padding-top: 20px;
     .container{
         display:flex;
         gap: 20px;
@@ -12,14 +13,21 @@ header{
 
         
         .menu-bars-btn{
+            position: fixed;
+            right: 25px;
+            z-index: 11;
             @media (min-width: 992px){
                 display: none;
             }
 
-            .btn{
-            font-size: 2rem;
+            button{
+            font-size: 1.8rem;
             border: none;
             background-color: transparent;
+            }
+
+            .fa-xmark{
+                color: $light;
             }
         }
        
@@ -111,11 +119,14 @@ header{
 
             .main-menu{
                 display: flex;
+                flex-direction: row;
                 justify-content: space-between;
                 align-content: center;
                 padding-top: 10px;
 
                 nav{
+                    display: flex;
+                    
                     a{
                         display: inline-block;
                         margin-right: 35px;
