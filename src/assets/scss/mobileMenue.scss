@@ -1,0 +1,53 @@
+.mobile-menu{
+    background-color: $menu-bg;
+    color: $light;
+    position: fixed;
+    top: 0;
+    bottom:0;
+    right:0;
+    left: 0;
+    z-index: 10;
+    padding-top: 70px;
+    font-size: 1.8rem;
+
+
+    nav{
+        a{
+            color: $light;
+            display: block;
+            padding: 20px;   
+            text-align: center;
+            border:none;
+            margin:none;
+
+            &:hover{
+            background-color: $menu-active;
+            color: $dark;
+            }   
+        }
+        .active{
+            background-color: $menu-active;
+            color: $dark;
+        }
+    }
+
+
+    .media{
+        margin-top: 40px;
+        border:none;
+        margin:none;
+
+        a{
+            padding: 0 20px;
+            color: $light;
+            font-size: 32px;
+
+            &:hover{
+            color: $menu-active;
+            }
+
+        }
+        
+    }
+    
+}

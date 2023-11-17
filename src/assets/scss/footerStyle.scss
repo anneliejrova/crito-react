@@ -1,0 +1,206 @@
+footer{
+    background-color: $footer-bg;
+    color: $light;
+
+    a{
+        text-decoration: none;
+        color: $light;
+    }
+
+
+    .footer-menu{
+        padding: 60px 0;
+        position: relative;
+        z-index: 0;
+
+        @media (min-width: 576px) {
+            padding: 100px 0 50px 0;
+        }
+
+    
+        .lines{
+        width: 100vw;
+        
+            .bg-lines3{
+                width: 50%;
+                height: auto;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: -1;
+        
+
+                @media (min-width: 1200px){
+                width: 20%;
+                }
+            }
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            
+
+            @media (min-width: 576px){
+                flex-direction: row;
+                }
+
+
+            @media (min-width: 768px){
+            flex-direction: column;
+            }
+
+            @media (min-width: 1200px) {
+             flex-direction: row;
+             gap: 40px;
+            }
+
+            .logo-info{
+                display:flex;
+                align-items: flex-start;
+                flex-direction: column;
+            
+                
+
+                @media (min-width: 768px){
+                display:flex;
+                flex-direction: row;
+                }
+
+                @media (min-width: 992px){
+                align-items: center;
+                }
+ 
+
+                @media (min-width: 1200px) {
+                    width: 40%;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                
+                img{
+                    height: 25%;
+                    width: auto;
+                    
+                }
+
+                p{
+                    display: none;
+                    padding-top: 5%;
+
+                    @media (min-width: 576px){
+                    display: block;
+                    }
+  
+                }
+
+            }
+
+            
+        
+
+            .menu{
+                padding-top: 30px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 20px;
+
+
+                @media (min-width: 576px){
+                flex-direction: column;
+                flex-wrap: nowrap;
+                }
+
+
+                @media (min-width:768px) {
+                  flex-direction: row;
+                }
+
+
+
+                a{
+                    display: block;
+                    color: $light;
+                    &:hover{
+                        color: $accent;
+                    }
+
+                }
+
+                .menu-item{
+
+                    .title{
+                        h3{
+                            font-size: 0.9rem;
+                            @media (min-width: 576px) {
+                                font-size: 1.3rem;
+                            }
+
+                        }
+                    }
+
+                    .specified-menu{
+                        display: none;
+
+                        @media (min-width:768px) {
+                            display: block;
+                        }
+                    }
+
+                    .link-menu{
+                        background-color: #0e1021ad;
+                        border-radius: 50%;
+                    }
+            }
+            }
+        }
+    
+    } 
+    
+    .footer-bottom{
+        grid-area: bottom;
+        border-top: 1px solid $accent;
+
+        .container{
+            font-size: 0.6rem;
+            font-weight: 200;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            height: 80px;
+
+            @media (min-width:768px) {
+                font-size: 0.8rem;
+            }
+
+            .copy{
+                span{
+                    display: block;
+
+                    @media (min-width:768px) {
+                        display: inline-block;
+                    }
+                }
+            }
+            
+            i{
+            padding: 0.6rem;
+            font-size: 1rem;
+            color:$light;
+
+                &:hover{
+                color: $accent;
+                 }
+
+                 @media (min-width:768px) {
+                padding: 1rem;
+                font-size: 1.3rem;
+            }   
+            }
+        }
+    }
+
+}

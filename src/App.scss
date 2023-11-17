@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,900&display=swap');
 
+<<<<<<< HEAD
 
 @import './assets/scss/basics/colors';
 @import './assets/scss/basics/buttons';
@@ -32,6 +33,28 @@
 @import './assets/scss/error404.scss';
 
 
+=======
+@import './assets/scss/colors.scss';
+@import './assets/scss/sectionTitle.scss';
+@import './assets/scss/buttons.scss';
+@import './assets/scss/pageTitle.scss';
+@import './assets/scss/headerStyle.scss';
+@import './assets/scss/footerStyle.scss';
+@import './assets/scss/showcaseStyle.scss';
+@import './assets/scss/partnersStyle.scss';
+@import './assets/scss/featuresStyle.scss';
+@import './assets/scss/aboutStyle.scss';
+@import './assets/scss/servicesStyle.scss';
+@import './assets/scss/whyUsStyle.scss';
+@import './assets/scss/projectCaseStyle.scss';
+@import './assets/scss/teamTestimonialsStyle.scss';
+@import './assets/scss/articleNewsStyle.scss';
+@import './assets/scss/newsletterStyle.scss';
+@import './assets/scss/contactUsStyle.scss';
+@import './assets/scss/contactForm.scss';
+@import './assets/scss/error404.scss';
+@import './assets/scss/mobileMenue.scss';
+>>>>>>> 38438c885d959d4292be91c2abd388df2aa9cd7e
 
 .wrapper-grid{
     height: 100vh;
